@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+<!-- font install google copy/paste start-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital@0;1&display=swap" rel="stylesheet">
+<!-- end copy/paste-->
+
+</head>
+
+
+<body>
+<div class="grid">
+<!-- clickable boxes at top of page - on every page -->
+      <div onclick="location.href='index.html';" style="cursor: pointer;" id="titlebox">
+        <p><h2>PARKER LEABO</h2></p>
+      </div>
+      <div onclick="location.href='work.html';" style="cursor: pointer;" id="workbox">
+        <p><h2>WORK</h2></p>
+      </div>
+      <div onclick="location.href='contact.html';" style="cursor: pointer;" id="contactbox">
+        <p><h2>CONTACT</h2></p>
+      </div>
+      <div onclick="location.href='about.html';" style="cursor: pointer;" id="aboutbox">
+        <p><h2>ABOUT</h2></p>
+      </div>
+
+<div class="evenbiggercontainer">
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 8</div>
+      <img src="img/poster8.jpg" class="slide-image" style="cursor:pointer;" onclick="location.href='portentries/portfentry10.html';">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 8</div>
+      <img src="img/poster3.JPG" class="slide-image" style="cursor:pointer;" onclick="location.href='portentries/portfentry5.html';">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 8</div>
+      <img src="img/poster2.JPG" class="slide-image" style="cursor:pointer;" onclick="location.href='portentries/portfentry4.html';">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 8</div>
+      <img src="img/flash1.jpg" class="slide-image" style="cursor:pointer;" onclick="location.href='portentries/portfentry1.html';">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 8</div>
+      <img src="img/poster4.png" class="slide-image" style="cursor:pointer;" onclick="location.href='portentries/portfentry6.html';">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 8</div>
+      <img src="img/flash2.jpg" class="slide-image" style="cursor:pointer;" onclick="location.href='portentries/portfentry2.html';">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">7 / 8</div>
+      <img src="img/poster5.JPG" class="slide-image" style="cursor:pointer;" onclick="location.href='portentries/portfentry7.html';">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">8 / 8</div>
+      <img src="img/flash4.jpg" class="slide-image" style="cursor:pointer;" onclick="location.href='portentries/portfentry11.html';">
+      <div class="text"></div>
+
+    
+    </div>
+  </div>
+</div>
+
+<!-- bottom boxes -->
+      <div onclick="location.href='blog.html';" style="cursor: pointer;" id="blogbox">
+        <p><h2>BLOG</h2></p>
+      </div>
+      <div onclick="location.href='cv.html';" style="cursor: pointer;" id="cvbox">
+        <p><h2>CV</h2></p>
+      </div>
+      <div id="xbox1">
+        <p></p>
+      </div>
+      <div onclick="location.href='https://www.youtube.com/watch?v=sw9Q_N6ixBI';" style="cursor: pointer;" id="xbox2">
+        <p></p>
+      </div>
+</div>
+
+</body>
+<script>
+
+  let slideIndex = 0;
+  showSlides();
+  function showSlides() 
+  {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 4000); 
+  }
+  </script>
+</html>
